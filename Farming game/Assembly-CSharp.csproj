@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BAFEAC3B-2EC1-F63A-F8A9-3AF38EED115D}</ProjectGuid>
+    <ProjectGuid>{120FE864-2E50-71BB-9720-EAF6C4E698A9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -69,7 +69,9 @@
     <Compile Include="Assets\Scripts\Ai Bots\BasicAI.cs" />
     <Compile Include="Assets\Scripts\Ai Bots\Dog.cs" />
     <Compile Include="Assets\Scripts\CharacterAndCamera\CameraScript.cs" />
+    <Compile Include="Assets\Scripts\CharacterAndCamera\CharacterMovement.cs" />
     <Compile Include="Assets\Scripts\CharacterAndCamera\MoveToClickPoint.cs" />
+    <Compile Include="Assets\Scripts\Hoe.cs" />
     <Compile Include="Assets\Scripts\HouseCeilingTrigger.cs" />
     <Compile Include="Assets\Scripts\Inventory\ActionBar.cs" />
     <Compile Include="Assets\Scripts\Inventory\DragAndDrop.cs" />
@@ -78,31 +80,31 @@
     <Compile Include="Assets\TIlemap\Tile.cs" />
     <Compile Include="Assets\TIlemap\Tilemap.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/famil/Desktop/pj/Game Projects/escape room/Escape room/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/famil/Desktop/Farming-game/Farming game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/famil/Desktop/pj/Game Projects/escape room/Escape room/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/famil/Desktop/Farming-game/Farming game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/famil/Desktop/pj/Game Projects/escape room/Escape room/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/famil/Desktop/Farming-game/Farming game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/famil/Desktop/pj/Game Projects/escape room/Escape room/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/famil/Desktop/Farming-game/Farming game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/famil/Desktop/pj/Game Projects/escape room/Escape room/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/famil/Desktop/Farming-game/Farming game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/famil/Desktop/pj/Game Projects/escape room/Escape room/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/famil/Desktop/Farming-game/Farming game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/famil/Desktop/pj/Game Projects/escape room/Escape room/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/famil/Desktop/Farming-game/Farming game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/famil/Desktop/pj/Game Projects/escape room/Escape room/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/famil/Desktop/Farming-game/Farming game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/famil/Desktop/pj/Game Projects/escape room/Escape room/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/famil/Desktop/Farming-game/Farming game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

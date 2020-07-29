@@ -13,6 +13,8 @@ public class HeldItem : MonoBehaviour
 
     private List<string> droppableItems;
 
+    public bool hoeout;
+
     void Start()
     {
         droppableItems = new List<string>();
@@ -21,7 +23,7 @@ public class HeldItem : MonoBehaviour
 
         //var cube = Resources.Load("Cube Variant");
         //itemPre = cube as GameObject;
-        Instantiate(itemPre, transform.position, transform.rotation);
+        //Instantiate(itemPre, transform.position, transform.rotation);
     }
 
     void Update()
@@ -52,6 +54,16 @@ public class HeldItem : MonoBehaviour
         else
             heldItems[1].SetActive(false);
 
+        if (selectedItem.Equals("Hoe"))
+        {
+            heldItems[2].SetActive(true);
+            hoeout = true;
+        }
+        else
+        {
+            heldItems[2].SetActive(false);
+            hoeout = false;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             if (droppableItems.Contains(selectedItem))

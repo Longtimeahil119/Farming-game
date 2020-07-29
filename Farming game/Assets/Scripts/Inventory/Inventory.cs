@@ -39,6 +39,8 @@ public class Inventory : MonoBehaviour
         invStacks[10] = 1;
         invSlots[11] = "Flashlight";
         invStacks[11] = 1;
+        invSlots[12] = "Hoe";
+        invStacks[12] = 1;
     }
 
     void Update()
@@ -82,7 +84,7 @@ public class Inventory : MonoBehaviour
         //    Gun.gun.canFire = true;
         //}
 
-        ShowAllItems();
+        //ShowAllItems();
 
 
     }
@@ -95,19 +97,19 @@ public class Inventory : MonoBehaviour
             panel.gameObject.SetActive(false);
     }
 
-    public void ShowAllItems()
-    {
-        for (int i = 0; i < invSlots.Length; i++)
-        {
-            if (invSlots[i].Equals(""))
-            {
-                imageIcons[i].SetActive(false);
-            }
-            else
-            {
-                imageIcons[i].SetActive(true);
-                imageIcons[i].GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("Item Icons/" + invSlots[i].ToString());
-            }
-        }
-    }
+    //public void ShowAllItems()
+    //{
+    //    for (int i = 0; i < invSlots.Length; i++)
+    //    {
+    //        if (invSlots[i].Equals(""))
+    //        {
+    //            imageIcons[i].SetActive(false);
+    //        }
+    //        else
+    //        {
+    //            imageIcons[i].SetActive(true);
+    //            imageIcons[i].GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("Item Icons/" + invSlots[i].ToString());
+    //        }
+    //    }
+    //}
 }

@@ -4,16 +4,7 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-
-    int UP = 1;
-    int DOWN = 2;
-    int LEFT = 3;
-    int RIGHT = 4;
-    int UPLEFT = 5;
-    int UPRIGHT = 6;
-    int DOWNLEFT = 7;
-    int DOWNRIGHT = 8;
-    int dir = 0;
+    //int dir = 0;
     int rot = 0;
     int RLEFT = 1;
     int RRIGHT = 2;
@@ -36,44 +27,6 @@ public class CameraScript : MonoBehaviour
 
     void Update()
     {
-        //get key codes
-        if (Input.GetKey(KeyCode.W))
-        {
-            dir = UP;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            dir = DOWN;
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            dir = LEFT;
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            dir = RIGHT;
-        }
-        else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W))
-        {
-            dir = UPLEFT;
-        }
-        else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.W))
-        {
-            dir = UPRIGHT;
-        }
-        else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S))
-        {
-            dir = DOWNLEFT;
-        }
-        else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S))
-        {
-            dir = DOWNRIGHT;
-        }
-        else if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
-        {
-            dir = 0;
-        }
-
         if (Input.GetKeyDown(KeyCode.Q))
         {
             rot = RLEFT;
@@ -109,40 +62,6 @@ public class CameraScript : MonoBehaviour
         else if (Input.mousePosition.y <= 10)
         {
             camt.Translate(0, 0, -10 * Time.deltaTime);
-        }
-
-        //camera scroll
-        if (dir == UP)
-        {
-            camt.Translate(0, 0, 10 * Time.deltaTime);
-        }
-        else if (dir == DOWN)
-        {
-            camt.Translate(0, 0, -10 * Time.deltaTime);
-        }
-        else if (dir == LEFT)
-        {
-            camt.Translate(-10 * Time.deltaTime, 0, 0);
-        }
-        else if (dir == RIGHT)
-        {
-            camt.Translate(10 * Time.deltaTime, 0, 0);
-        }
-        else if (dir == UPLEFT)
-        {
-            camt.Translate(-10 * Time.deltaTime, 0, 10 * Time.deltaTime);
-        }
-        else if (dir == UPRIGHT)
-        {
-            camt.Translate(10 * Time.deltaTime, 0, 10 * Time.deltaTime);
-        }
-        else if (dir == DOWNLEFT)
-        {
-            camt.Translate(-10 * Time.deltaTime, 0, -10 * Time.deltaTime);
-        }
-        else if (dir == DOWNRIGHT)
-        {
-            camt.Translate(10 * Time.deltaTime, 0, -10 * Time.deltaTime);
         }
 
         //camera rotation with middle mouse
